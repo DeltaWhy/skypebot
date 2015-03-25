@@ -5,3 +5,7 @@ Progress:
 - Can send messages by generating mouse and key events
 - It is theoretically possible to have skype generate libnotify notifications for incoming messages
 - I can't figure out how to read those messages
+
+- https://stackoverflow.com/questions/11544836/monitoring-dbus-messages-by-python
+- http://askubuntu.com/questions/38733/how-to-read-dbus-monitor-output
+- Skype actually uses notify-send so that needs to be installed - maybe we don't need all of lxde

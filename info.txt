@@ -1,0 +1,7 @@
+Progress:
+- We can get Skype running in Xvfb
+- If I install lxde then I can run ldtp (can't figure out how to start dbus otherwise)
+- Can't read the chat window directly
+- Can send messages by generating mouse and key events
+- It is theoretically possible to have skype generate libnotify notifications for incoming messages
+- I can't figure out how to read those messages

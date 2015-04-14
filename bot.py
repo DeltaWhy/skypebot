@@ -25,7 +25,9 @@ def notifications(bus, message):
                 onMessage(*match.groups())
 
 def onMessage(sender, message):
-    print "%s: %s"%(sender, message)
+    print "<%s> %s"%(sender, message)
+    sys.stdout.flush()
+    sys.stderr.write("<%s> %s\n"%(sender, message))
 
 DBusGMainLoop(set_as_default=True)
 

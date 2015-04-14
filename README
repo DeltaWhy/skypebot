@@ -1,0 +1,10 @@
+How to make this crazy thing work
+
+1. Start up the Docker container:
+    docker run -v /home/michael/skypebot:/skypebot -p 127.0.0.1::5900 deltawhy/skypebot
+2. Connect via SSH tunnel to the VNC server.
+3. Sign in to the bot's Skype account.
+4. In Skype options, enable system notifications for received chat messages.
+5. Open the chat window and select the chat you want to be active.
+6. Close all other Skype windows.
+7. Run bot.py.

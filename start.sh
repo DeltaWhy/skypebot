@@ -3,6 +3,6 @@ sleep 2
 export DISPLAY=:0
 export QT_ACCESSIBILITY=1
 openbox &
-xterm &
+lxsession &
 x11vnc -display :0 > x11vnc.log 2>&1 &
-python -i bot.py
+skype

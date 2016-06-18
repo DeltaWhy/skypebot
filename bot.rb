@@ -3,13 +3,20 @@ require 'cinch'
 
 bot = Cinch::Bot.new do
   configure do |c|
-    c.server = 'irc.hephaestos.me'
+    c.server = 'irc.deltawhy.me'
     c.nick = 'SkypeBot'
-    c.channels = ['#main']
+    c.password = 'deltacraft'
+    c.channels = ['#deltacraft']
+    c.modes = ['+B']
   end
 
   on :message do |m|
-    puts "<#{m.user.nick}> #{m.message}"
+    puts "<#{m.user.nick}> #{m.message}" unless m.action?
+    STDOUT.flush
+  end
+
+  on :action do |m|
+    puts "* #{m.user.nick} #{m.action_message}"
     STDOUT.flush
   end
 end

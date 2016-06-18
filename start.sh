@@ -4,5 +4,5 @@ export DISPLAY=:0
 export QT_ACCESSIBILITY=1
 openbox &
 lxsession &
-x11vnc -display :0 > x11vnc.log 2>&1 &
+x11vnc -shared -forever -display :0 > x11vnc.log 2>&1 &
 skype
